@@ -20,5 +20,5 @@ Then(/^I type text (\w+) on search$/, async (text) => {
     await HomePage.typeText(text);
     await expect(HomePage.inputSearchField).toBeExisting();
     await expect(HomePage.inputSearchField).toHaveValue(text);
-});
+})
 
